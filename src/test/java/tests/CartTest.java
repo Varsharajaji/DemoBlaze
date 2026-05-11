@@ -23,8 +23,7 @@ public class CartTest extends BaseTest {
 
         cp.openCart();
 
-        boolean status = driver.getPageSource()
-                .contains("Samsung galaxy s6");
+        boolean status = driver.getPageSource().contains("Samsung galaxy s6");
 
         Assert.assertTrue(status);
     }

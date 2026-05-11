@@ -20,8 +20,7 @@ public class BaseTest {
 
         driver.manage().window().maximize();
 
-        driver.manage().timeouts()
-                .implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         driver.get("https://www.demoblaze.com/");
     }
@@ -30,6 +29,7 @@ public class BaseTest {
 
     public void closeBrowser()
     {
+
         driver.quit();
     }
 
