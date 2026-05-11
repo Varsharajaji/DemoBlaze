@@ -7,7 +7,6 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage {
 
     WebDriver driver;
-
     public LoginPage(WebDriver driver)
     {
         this.driver = driver;
@@ -25,7 +24,6 @@ public class LoginPage {
     By loginButton = By.xpath("//button[text()='Log in']");
     By userNameText = By.id("nameofuser");
     By logoutBtn = By.id("logout2");
-
 
 
     public void signup(String uname, String pass) throws Exception
@@ -58,8 +56,6 @@ public class LoginPage {
     {
         return driver.findElement(userNameText).getText();
     }
-
-
 
     public void logout() throws Exception
     {
